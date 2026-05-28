@@ -1,0 +1,182 @@
+/* ═══════════════════════════════════════════
+   HERO / HEADER
+   ═══════════════════════════════════════════ */
+
+.hero {
+  position: relative;
+  min-height: 560px;
+  margin-bottom: 18px;
+  overflow: hidden;
+  border-top: 1px solid #e3e3e3;
+  border-bottom: 1px solid #dfdfdf;
+  background:
+    linear-gradient(90deg, rgba(245, 246, 248, 0.95) 0%, rgba(245, 246, 248, 0.85) 45%, rgba(245, 246, 248, 0.72) 100%),
+    radial-gradient(circle at 62% 46%, rgba(177, 183, 194, 0.22) 0, rgba(177, 183, 194, 0.15) 130px, transparent 210px),
+    radial-gradient(circle at 75% 62%, rgba(142, 149, 160, 0.2) 0, rgba(142, 149, 160, 0.12) 120px, transparent 180px),
+    linear-gradient(120deg, #f4f4f5 10%, #ebedf0 80%);
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-linear-gradient(to right,
+      rgba(255, 255, 255, 0.07) 0,
+      rgba(255, 255, 255, 0.07) 1px,
+      transparent 1px,
+      transparent 188px);
+  pointer-events: none;
+}
+
+.hero-topbar {
+  position: relative;
+  z-index: 100;
+  background: rgba(255, 255, 255, 0.96);
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.hero-container {
+  width: min(1120px, 92vw);
+  margin: 0 auto;
+}
+
+.topbar-inner {
+  min-height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  text-decoration: none;
+}
+
+.brand-logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.brand-caca {
+  color: #8c6b0d;
+  font-weight: 800;
+  letter-spacing: 0.01em;
+}
+
+.brand-divider {
+  width: 1px;
+  height: 18px;
+  background: #d9d9d9;
+}
+
+.brand-full {
+  max-width: 200px;
+  color: #5f6470;
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+  line-height: 1.2;
+  font-weight: 700;
+}
+
+.hero-nav {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hero-nav a {
+  color: #4f5562;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+/* ─── Menu Mobile Toggle elements (Hidden on desktop) ─── */
+.menu-checkbox {
+  display: none;
+}
+
+.menu-button {
+  display: none;
+  cursor: pointer;
+  padding: 10px;
+  z-index: 100;
+}
+
+.hamburger {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background: #1c1c1c;
+  position: relative;
+  transition: background 0.2s ease-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  position: absolute;
+  width: 24px;
+  height: 2px;
+  background: #1c1c1c;
+  transition: transform 0.2s ease-out;
+}
+
+.hamburger::before {
+  top: -7px;
+}
+
+.hamburger::after {
+  bottom: -7px;
+}
+
+.hero-nav a:hover {
+  color: #8c6b0d;
+}
+
+.hero-nav .nav-contact {
+  padding: 8px 18px;
+  border-radius: 6px;
+  font-size: 0.86rem;
+  color: #1c1c1c;
+  font-weight: 700;
+  border-color: #e0ae1f;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  padding-top: 84px;
+}
+
+.hero-content h1 {
+  max-width: 570px;
+  margin-bottom: 20px;
+  font-size: clamp(2.15rem, 5.8vw, 4.05rem);
+  line-height: 0.96;
+  letter-spacing: -0.02em;
+  color: #101b33;
+}
+
+.hero-content h1 span {
+  display: block;
+  color: #8c6b0d;
+}
+
+.hero-content p {
+  max-width: 640px;
+  margin-bottom: 30px;
+  font-size: 1.08rem;
+  color: #4f5767;
+  line-height: 1.4;
+}
+
+.hero-actions {
+  display: flex;
+  gap: 12px;
+  padding-bottom: 70px;
+}

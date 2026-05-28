@@ -1,0 +1,71 @@
+/* ═══════════════════════════════════════════
+   VARIABLES AND RESET
+   ═══════════════════════════════════════════ */
+
+:root {
+  --paper: #ffffff;
+  --ink: #171717;
+  --line: #e4e4e4;
+  --yellow: #f6c330;
+  --green: #4ea267;
+  --blue: #4d88cf;
+  --red: #d34a43;
+  --purple: #8f61d4;
+  --dark: #15171d;
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--ink);
+  background: linear-gradient(180deg, #f8f8f8 0%, #efefef 100%);
+}
+
+.page {
+  width: 100%;
+  margin: 0;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 1.45rem;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 0.86rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+h3 {
+  font-size: 0.82rem;
+}
+
+p {
+  margin: 0;
+  color: #444;
+  font-size: 0.77rem;
+  line-height: 1.55;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}

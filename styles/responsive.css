@@ -1,0 +1,398 @@
+/* ═══════════════════════════════════════════
+   RESPONSIVE — DESKTOP / TABLET
+   ═══════════════════════════════════════════ */
+
+@media (min-width: 768px) {
+  .page {
+    width: 100%;
+  }
+
+  .hero {
+    min-height: 610px;
+  }
+
+  .hero-content p {
+    font-size: 1.14rem;
+  }
+
+  .stats-copy p {
+    font-size: 1.06rem;
+  }
+
+  .stat-card p {
+    font-size: 0.96rem;
+  }
+
+  .notice-inner p {
+    font-size: 1.12rem;
+  }
+
+  .news-head a {
+    font-size: 1rem;
+  }
+
+  .news-body h3 {
+    font-size: 1.3rem;
+  }
+
+  .news-body p {
+    font-size: 0.92rem;
+  }
+
+  .consortium-grid {
+    grid-template-columns: repeat(4, minmax(170px, 1fr));
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE — TABLET / MOBILE
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 860px) {
+  .hero {
+    min-height: 490px;
+  }
+
+  .topbar-inner {
+    min-height: 58px;
+  }
+
+  .hero-nav {
+    position: fixed;
+    top: 0;
+    right: -280px;
+    width: 280px;
+    height: 100vh;
+    background: #ffffff;
+    flex-direction: column;
+    align-items: stretch;
+    padding: 80px 30px 30px;
+    gap: 16px;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    transition: right 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    z-index: 900;
+  }
+
+  .menu-button {
+    display: flex;
+    align-items: center;
+    position: relative;
+    z-index: 1000;
+  }
+
+  .menu-checkbox:checked~.menu-button {
+    position: fixed;
+    right: 4vw;
+    top: 18px;
+  }
+
+  .menu-checkbox:checked~.hero-nav {
+    right: 0;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.1), 0 0 0 10000px rgba(0, 0, 0, 0.4);
+  }
+
+  /* Hamburger Animation */
+  .menu-checkbox:checked~.menu-button .hamburger {
+    background: transparent;
+  }
+
+  .menu-checkbox:checked~.menu-button .hamburger::before {
+    transform: rotate(45deg);
+    top: 0;
+  }
+
+  .menu-checkbox:checked~.menu-button .hamburger::after {
+    transform: rotate(-45deg);
+    bottom: 0;
+  }
+
+  .hero-nav a {
+    font-size: 1.05rem;
+    padding: 12px 10px;
+    width: 100%;
+    text-align: right;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .hero-nav a:last-child {
+    border-bottom: none;
+  }
+
+  .hero-nav .nav-contact {
+    text-align: center;
+    padding: 14px 24px;
+    width: 100%;
+    margin-top: 20px;
+    border-bottom: none;
+  }
+
+  .hero-content {
+    padding-top: 48px;
+  }
+
+  .hero-content h1 {
+    max-width: 380px;
+  }
+
+  .hero-content p {
+    max-width: 440px;
+    font-size: 0.88rem;
+    line-height: 1.45;
+  }
+
+  .hero-actions {
+    padding-bottom: 44px;
+  }
+
+  /* Mission */
+  .mission {
+    width: min(100% - 28px, 760px);
+    padding: 28px 24px;
+  }
+
+  .mission-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  /* Stats */
+  .stats {
+    width: min(100% - 28px, 760px);
+    padding: 28px 24px;
+    margin-top: 16px;
+  }
+
+  .stats-layout {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
+  .stats-copy h2 {
+    font-size: 2rem;
+  }
+
+  .stats-copy p {
+    font-size: 1rem;
+    max-width: 100%;
+  }
+
+  .stats-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+
+  .stat-card p {
+    font-size: 0.9rem;
+  }
+
+  /* Insights (Mobile) */
+  .insights {
+    padding: 40px 24px;
+    width: min(100% - 28px, 760px);
+  }
+  .insights-inner {
+    grid-template-columns: 1fr;
+    gap: 36px;
+  }
+  .insights-copy h2 {
+    font-size: 1.8rem;
+  }
+  .insights-visual canvas {
+    min-height: 220px;
+    max-height: 220px;
+  }
+
+  /* Areas */
+  .areas-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+  }
+
+  /* Consortium */
+  .consortium {
+    padding: 48px 0;
+  }
+
+  .consortium-grid {
+    grid-template-columns: repeat(2, minmax(170px, 1fr));
+    gap: 24px 16px;
+  }
+
+  .dot {
+    width: 64px;
+    height: 64px;
+    font-size: 1.7rem;
+  }
+
+  .consortium-item p {
+    font-size: 0.95rem;
+  }
+
+  /* Research */
+  .research {
+    padding: 42px 26px;
+    grid-template-columns: 1fr;
+    gap: 34px;
+  }
+
+  .research-column {
+    max-width: 100%;
+  }
+
+  .research-column.right {
+    padding-left: 0;
+    border-left: 0;
+    border-top: 1px solid #1e2534;
+    padding-top: 28px;
+  }
+
+  .research-column h2 {
+    font-size: 2rem;
+  }
+
+  .research-column p {
+    font-size: 1rem;
+  }
+
+  /* Opportunities */
+  .opportunities-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  /* Notice */
+  .notice {
+    width: min(100% - 28px, 760px);
+    padding: 10px 0 32px;
+  }
+
+  .notice-inner {
+    padding: 20px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .notice-inner p {
+    font-size: 1rem;
+  }
+
+  /* News */
+  .news {
+    width: min(100% - 28px, 760px);
+    padding-bottom: 36px;
+  }
+
+  .news-grid {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .news-thumb {
+    height: 170px;
+  }
+
+  .news-body h3 {
+    font-size: 1.35rem;
+  }
+
+  .news-body p {
+    font-size: 0.95rem;
+  }
+
+  /* Contacts */
+  .contact {
+    width: min(100% - 28px, 760px);
+    padding: 40px 0;
+  }
+
+  .contact-layout {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding: 32px 22px;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .footer-links {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .footer-right {
+    align-items: flex-start;
+  }
+
+  .footer-brands {
+    text-align: left;
+  }
+
+  .footer-copy {
+    text-align: left;
+  }
+}
+
+
+/* ═══════════════════════════════════════════
+   RESPONSIVE — SMALL MOBILE
+   ═══════════════════════════════════════════ */
+
+@media (max-width: 620px) {
+
+  .brand-full,
+  .brand-divider {
+    display: none;
+  }
+
+  .topbar-inner {
+    justify-content: space-between;
+  }
+
+  .hero-content h1 {
+    font-size: clamp(1.9rem, 10vw, 2.7rem);
+  }
+
+  .hero-actions {
+    flex-wrap: wrap;
+  }
+
+  .stats-copy h2 {
+    font-size: 1.9rem;
+  }
+
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .areas-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .consortium-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-form-wrapper {
+    padding: 24px 18px;
+  }
+}

@@ -1,0 +1,39 @@
+/* ═══════════════════════════════════════════
+   RESEARCH SUPPORT
+   ═══════════════════════════════════════════ */
+
+.research {
+  width: 100%;
+  margin: 0;
+  padding: 72px clamp(64px, 9vw, 110px);
+  border: 0;
+  border-radius: 0;
+  background: var(--dark);
+  display: grid;
+  grid-template-columns: repeat(2, minmax(280px, 1fr));
+  gap: 56px;
+}
+
+.research-column {
+  max-width: 520px;
+}
+
+.research-column.right {
+  padding-left: 56px;
+  border-left: 1px solid #1e2534;
+}
+
+.research-column h2 {
+  margin: 0 0 18px;
+  color: #f0c02b;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  font-size: clamp(2rem, 3vw, 3.2rem);
+}
+
+.research-column p {
+  margin: 0 0 28px;
+  color: #c5cad4;
+  font-size: 1.03rem;
+  line-height: 1.4;
+}

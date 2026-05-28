@@ -1,0 +1,126 @@
+/* ═══════════════════════════════════════════
+   NEWS
+   ═══════════════════════════════════════════ */
+
+.news {
+  width: min(100% - 48px, 1120px);
+  margin: 0 auto;
+  padding: 22px 0 60px;
+  scroll-margin-top: 100px;
+}
+
+
+.news-head {
+  display: flex;
+  flex-direction: column; 
+  align-items: center;    
+  gap: 12px;              
+  margin-bottom: 40px;
+  text-align: center
+}
+
+.news-head h2 {
+  margin: 0;
+  text-transform: none;
+  letter-spacing: -0.01em;
+  font-size: clamp(2.1rem, 3.8vw, 4.2rem);
+  color: #1f2a3d;
+}
+
+.news-head a {
+  text-decoration: none;
+  color: #8c6b0d;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+
+.news-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 28px; 
+  width: 100%;
+}
+
+
+.news-card {
+  background: #fff;
+  border: 1px solid #dfdfdf;
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: 0 3px 9px rgba(20, 23, 31, 0.06);
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  display: flex; 
+  flex-direction: column;
+  height: 100%; }
+
+.news-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(20, 23, 31, 0.1);
+}
+
+
+.news-thumb {
+  height: 195px;
+  position: relative;
+  padding: 14px;
+  flex-shrink: 0; 
+}
+
+.thumb-1 { background: linear-gradient(120deg, #f5df71, #dca816); } 
+.thumb-2 { background: linear-gradient(120deg, #f5df71, #dca816); } 
+.thumb-3 { background: linear-gradient(120deg, #f5df71, #dca816); } 
+
+.tag {
+  display: inline-block;
+  border-radius: 6px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(20, 30, 42, 0.08);
+  color: #4f596d;
+  font-size: 0.62rem;
+  font-weight: 700;
+  padding: 5px 10px;
+}
+
+
+.news-body {
+  padding: 16px 18px 18px;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; 
+}
+
+.news-date {
+  margin: 0 0 10px;
+  color: #5f687a;
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+}
+
+.news-body h3 {
+  margin: 0 0 10px;
+  color: #1d2638;
+  font-size: 1.25rem;
+  line-height: 1.15;
+}
+
+.news-body p {
+  margin: 0;
+  color: #667083;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+
+.news-body a {
+  margin-top: auto; 
+  padding-top: 16px; 
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #2a3446;
+  font-size: 0.95rem;
+  font-weight: 800;
+  letter-spacing: 0.05em;
+}

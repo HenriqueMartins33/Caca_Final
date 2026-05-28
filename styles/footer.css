@@ -1,0 +1,70 @@
+/* ═══════════════════════════════════════════
+   FOOTER
+   ═══════════════════════════════════════════ */
+
+.site-footer {
+  margin-top: 0;
+  padding: 44px max(4vw, 30px) 32px;
+  background: linear-gradient(120deg, #eabd2f 0%, #eabd2f 72%, #efcc5e 72%, #efcc5e 100%);
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+.footer-links {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(220px, 1fr));
+  gap: 32px;
+}
+
+.footer-col h3 {
+  margin: 0 0 14px;
+  text-transform: uppercase;
+  color: #2d3440;
+  font-size: 1rem;
+  letter-spacing: 0.04em;
+  border-bottom: 1px solid rgba(41, 49, 63, 0.24);
+  padding-bottom: 10px;
+}
+
+.footer-col a {
+  display: block;
+  text-decoration: none;
+  color: #3d4759;
+  font-size: 0.95rem;
+  margin-bottom: 10px;
+  transition: color 0.2s ease;
+}
+
+.footer-col a:hover {
+  color: #1a1f2a;
+}
+
+.footer-right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 20px;
+}
+
+.footer-brands {
+  display: grid;
+  gap: 14px;
+  align-content: start;
+  color: #3d4759;
+  font-weight: 800;
+  font-size: 0.95rem;
+  text-align: right;
+}
+
+.footer-copy {
+  text-align: right;
+}
+
+.footer-copy p {
+  font-size: 0.78rem;
+  color: #4a3d10;
+  margin: 0;
+  line-height: 1.6;
+}
