@@ -69,6 +69,17 @@ caca-react-migration/
 
 ## Como Correr o Projeto
 
+criar um env na pasta caca api
+com
+PORT=5000
+MONGODB_URI=link
+JWT_SECRET=------
+
+e criar um env na root
+com
+VITE_API_URL=http://localhost:3001
+
+
 ### Front-end
 
 ```bash
