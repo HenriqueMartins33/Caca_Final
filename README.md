@@ -72,6 +72,7 @@ caca-react-migration/
 ### Front-end
 
 ```bash
+npm install
 npm run dev
 ```
 
@@ -79,7 +80,9 @@ npm run dev
 ### Back-end
 
 ```bash
+npm install
 cd caca-api
+npm run seed
 npm run dev
 ```
 
